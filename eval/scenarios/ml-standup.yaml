@@ -1,0 +1,46 @@
+title: ML team standup
+user:
+  displayName: Surya
+  aliases: [Sur, Suria]
+  role: Junior ML Engineer
+  topics: [retrieval, evaluation, data pipelines]
+speakers:
+  me: Samantha
+  Priya: Karen
+  Dan: Daniel
+lines:
+  - who: Priya
+    text: "Okay, let's get started with the standup. Dan, you go first."
+    label: question_for_other
+  - who: Dan
+    text: "Yesterday I fixed the flaky integration test and reviewed two pull requests. Today I'm on the deployment runbook."
+  - who: Priya
+    text: "Thanks. Surya, how about you?"
+    label: question_for_user
+  - who: me
+    text: "Yesterday I finished the data pipeline for the retrieval experiments. The new embedding model cut the index build time from forty minutes to twelve."
+  - who: Dan
+    text: "Nice. What batch size did you end up using for the last training run?"
+    label: question_for_user
+  - who: me
+    text: "Thirty two, with gradient accumulation of four."
+  - who: Priya
+    text: "We still need to decide on the evaluation set before Friday."
+  - who: Dan
+    text: "I can draft a proposal for that this afternoon."
+  - who: Priya
+    text: "Great. Dan, can you share the dashboard link in the channel after this call?"
+    label: question_for_other
+  - who: Dan
+    text: "Sure, will do."
+  - who: Priya
+    text: "Surya did a great job on the pipeline, by the way. That unblocked the whole team."
+    label: name_without_question
+  - who: Dan
+    text: "Agreed. Suria, does the pipeline handle the new document format yet?"
+    label: question_for_user
+  - who: me
+    text: "Not yet. Markdown and text work, PDF is next."
+  - who: Priya
+    text: "Okay, that's all for today. Thanks everyone."
+    label: small_talk

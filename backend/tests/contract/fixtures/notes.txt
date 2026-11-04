@@ -1,0 +1,8 @@
+MeetMind test document
+
+Section one: results
+The retrieval index rebuild now takes twelve minutes instead of forty.
+Recall at ten improved from 0.71 to 0.84 on the internal evaluation set.
+
+Section two: next steps
+Decide on the evaluation set before Friday and share the dashboard link.

@@ -1,0 +1,49 @@
+title: Tricky cases
+user:
+  displayName: Surya
+  aliases: [Sur, Suria]
+  role: Junior ML Engineer
+  topics: [retrieval, evaluation, data pipelines]
+speakers:
+  me: Samantha
+  Jon: Daniel
+  Mei: Karen
+  Alex: Fred
+lines:
+  - who: Jon
+    text: "Surya sent the summary last night, so everyone should have it."
+    label: name_without_question
+  - who: Mei
+    text: "Alex, what batch size did you use for your run?"
+    label: question_for_other
+  - who: Alex
+    text: "Sixty four, on the larger machine."
+  - who: Mei
+    text: "And did you try the smaller learning rate?"
+    label: question_for_other
+  - who: Alex
+    text: "Not yet, that's next."
+  - who: Jon
+    text: "Alex, how long did your evaluation take?"
+    label: question_for_other
+  - who: Alex
+    text: "About twenty minutes."
+  - who: me
+    text: "On my side the retrieval evaluation now runs in six minutes."
+  - who: Mei
+    text: "That's quick. What changed to make it that fast?"
+    label: question_for_user
+  - who: me
+    text: "The index is loaded once and shared across the query batch."
+  - who: Jon
+    text: "By the way, Suria is also presenting at the all hands next week."
+    label: name_without_question
+  - who: Mei
+    text: "So what's the plan for next week then?"
+    label: question_for_user
+    attention_after: true
+  - who: me
+    text: "Finish the PDF support, then the eval on the public benchmark."
+  - who: Jon
+    text: "Sounds good. Let's close here."
+    label: small_talk

@@ -1,0 +1,14 @@
+boto3==1.43.118
+fastapi==0.161.1
+httpx==0.28.1
+mlx-whisper==0.4.3
+numpy==2.5.4
+pydantic-settings==2.16.1
+pypdf==6.21.2
+python-docx==1.2.0
+python-multipart==0.0.32
+pyyaml==6.0.3
+sherpa-onnx==1.13.8
+sqlite-vec==0.1.9
+uvicorn==0.54.0
+websockets==17.3

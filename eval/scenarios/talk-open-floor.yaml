@@ -1,0 +1,27 @@
+title: A talk in the user's topic area, then an open floor (doubt scenario)
+user:
+  displayName: Surya
+  aliases: [Sur, Suria]
+  role: Junior ML Engineer
+  topics: [retrieval, evaluation, data pipelines]
+speakers:
+  me: Samantha
+  Speaker: Daniel
+  Host: Moira
+lines:
+  - who: Speaker
+    text: "Last quarter our search team moved from nightly index rebuilds to streaming updates."
+  - who: Speaker
+    text: "Every changed document is now re-embedded within two minutes, and the nightly job is gone."
+  - who: Speaker
+    text: "The catch was evaluation. Our offline recall numbers stopped matching what users saw, so we now sample live queries every day and grade them with a language model judge."
+  - who: Speaker
+    text: "Agreement between that judge and our human raters is about eighty percent."
+  - who: Host
+    text: "Great talk, thank you. We have a few minutes. Any questions?"
+    label: open_floor
+  - who: Speaker
+    text: "And since some of you work on retrieval too: Surya, how do you check that your index rebuilds don't hurt quality?"
+    label: question_for_user
+  - who: me
+    text: "We run two hundred labelled queries after every nightly rebuild, and a drop of more than two points in recall at ten blocks the release."

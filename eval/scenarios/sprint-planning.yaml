@@ -1,0 +1,44 @@
+title: Sprint planning, business heavy
+user:
+  displayName: Surya
+  aliases: [Sur, Suria]
+  role: Junior ML Engineer
+  topics: [retrieval, evaluation, data pipelines]
+speakers:
+  me: Samantha
+  Maya: Tessa
+  Tom: Fred
+lines:
+  - who: Maya
+    text: "Welcome everyone. The goal of this sprint is the customer pilot in three weeks."
+  - who: Tom
+    text: "Sales wants a demo for the two enterprise prospects by the end of the month."
+  - who: Maya
+    text: "Tom, what is the budget status for the cloud spend this quarter?"
+    label: question_for_other
+  - who: Tom
+    text: "We are at sixty percent of the quarterly budget, so there is room."
+  - who: Maya
+    text: "Surya, how long will the pipeline rework take?"
+    label: question_for_user
+  - who: me
+    text: "About a week for the retrieval pipeline, plus two days for the evaluation set."
+  - who: Tom
+    text: "And what would the bigger index cost us per month?"
+    label: question_for_user
+  - who: me
+    text: "Roughly forty dollars a month at the current query volume."
+  - who: Maya
+    text: "That fits. Let's put it in the plan."
+  - who: Tom
+    text: "Marketing also asked for a one pager on the pilot."
+  - who: Maya
+    text: "I will handle the one pager with marketing."
+  - who: Tom
+    text: "Maya, can we move the review to Thursday?"
+    label: question_for_other
+  - who: Maya
+    text: "Yes, Thursday afternoon works."
+  - who: Maya
+    text: "Okay, that's the plan. Thanks all."
+    label: small_talk

@@ -1,0 +1,28 @@
+{
+  "name": "meetmind-desktop",
+  "version": "0.1.0",
+  "private": true,
+  "description": "MeetMind desktop app: native audio capture plus the React UI",
+  "main": "./out/main/index.js",
+  "scripts": {
+    "dev": "env -u ELECTRON_RUN_AS_NODE electron-vite dev",
+    "build": "electron-vite build",
+    "start": "npm run build && env -u ELECTRON_RUN_AS_NODE open -n -a \"$(pwd)/node_modules/electron/dist/Electron.app\" --args \"$(pwd)\"",
+    "smoke": "npm run build && rm -f out/smoke.log && env -u ELECTRON_RUN_AS_NODE open -n -a \"$(pwd)/node_modules/electron/dist/Electron.app\" --args \"$(pwd)\" --smoke && sleep 66 && cat out/smoke.log",
+    "typecheck": "tsc --noEmit -p tsconfig.node.json && tsc --noEmit -p tsconfig.web.json"
+  },
+  "dependencies": {
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "26.6.5",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@vitejs/plugin-react": "6.1.2",
+    "electron": "45.0.0",
+    "electron-vite": "6.0.0",
+    "typescript": "7.0.2",
+    "vite": "8.3.5"
+  }
+}

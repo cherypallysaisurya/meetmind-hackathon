@@ -1,0 +1,35 @@
+# secrets, never committed
+.env
+
+# python
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+
+# node
+node_modules/
+dist/
+
+# generated eval audio, rebuilt with eval/generate_audio.py
+eval/audio/*.wav
+eval/audio/*.aiff
+
+# macOS
+.DS_Store
+
+# DynamoDB Local data (docker-compose.yml bind mount)
+.dynamodb/
+
+# Downloaded speech-to-text model files (see scripts/benchmark_stt.py and the STT adapter)
+models/
+
+# generated test clips and their timing files
+eval/audio/*
+!eval/audio/.gitkeep
+
+# eval raw results (the report in docs/eval-results.md is the record)
+eval/results/
+
+# local databases (the vector store file)
+data/

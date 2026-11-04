@@ -1,0 +1,39 @@
+title: Q and A, open floor session
+user:
+  displayName: Surya
+  aliases: [Sur, Suria]
+  role: Junior ML Engineer
+  topics: [retrieval, evaluation, data pipelines]
+speakers:
+  me: Samantha
+  Host: Moira
+  Ravi: Rishi
+lines:
+  - who: Host
+    text: "Thanks for the presentation. We have ten minutes for questions. Any questions from the room?"
+    label: open_floor
+  - who: Ravi
+    text: "I have one. How do you keep the index fresh when documents change?"
+    label: question_for_user
+  - who: Host
+    text: "Surya, do you want to take that one?"
+    label: handoff
+  - who: me
+    text: "We rebuild the index nightly, and changed documents are re-embedded on the fly."
+  - who: Ravi
+    text: "Makes sense, thank you."
+    label: small_talk
+  - who: Host
+    text: "Anything else? Thoughts on the evaluation approach?"
+    label: open_floor
+  - who: Ravi
+    text: "Why did you pick recall at ten rather than mean reciprocal rank?"
+    label: question_for_user
+  - who: Host
+    text: "That one is for you as well, Surya."
+    label: handoff
+  - who: me
+    text: "Because the answer agent reads the top ten chunks, so what matters is whether the right one is among them."
+  - who: Host
+    text: "Great. If there are no more questions, let's wrap up."
+    label: open_floor

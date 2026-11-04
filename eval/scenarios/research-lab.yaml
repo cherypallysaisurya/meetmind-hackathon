@@ -1,0 +1,39 @@
+title: Research lab meeting
+user:
+  displayName: Surya
+  aliases: [Sur, Suria]
+  role: Junior ML Engineer
+  topics: [retrieval, evaluation, data pipelines]
+speakers:
+  me: Samantha
+  Chen: Rishi
+  Lena: Moira
+lines:
+  - who: Chen
+    text: "Let's look at the retrieval results. Lena, can you summarize the baseline numbers?"
+    label: question_for_other
+  - who: Lena
+    text: "Sure. Recall at ten was 0.71 with the old index, and the rebuild took forty minutes."
+  - who: me
+    text: "With the new embedding model recall at ten went up to 0.84 and the rebuild dropped to twelve minutes."
+  - who: Chen
+    text: "That is a big jump. Which evaluation set did you measure that on?"
+    label: question_for_user
+  - who: me
+    text: "The internal set, two thousand queries with graded relevance."
+  - who: Lena
+    text: "I wonder if the gain holds on the public benchmark too."
+  - who: Chen
+    text: "We should check that before the paper deadline."
+  - who: Lena
+    text: "I can run it on Thursday."
+  - who: Chen
+    text: "Sur, how does the pipeline handle documents longer than the context window?"
+    label: question_for_user
+  - who: me
+    text: "They are split into chunks of about three hundred tokens with an overlap of fifty."
+  - who: Lena
+    text: "Surya mentioned that chunking approach in the last meeting too."
+    label: name_without_question
+  - who: Chen
+    text: "Good. Let's write up the method section this week."

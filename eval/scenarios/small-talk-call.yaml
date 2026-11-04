@@ -1,0 +1,43 @@
+title: Small talk heavy call
+user:
+  displayName: Surya
+  aliases: [Sur, Suria]
+  role: Junior ML Engineer
+  topics: [retrieval, evaluation, data pipelines]
+speakers:
+  me: Samantha
+  Alex: Daniel
+  Nora: Karen
+lines:
+  - who: Alex
+    text: "Good morning everyone, how are you all doing?"
+    label: small_talk
+  - who: Nora
+    text: "Doing well, thanks. The weather is finally nice."
+    label: small_talk
+  - who: Alex
+    text: "How was your weekend, Surya?"
+    label: small_talk
+  - who: me
+    text: "Pretty relaxed, I went hiking."
+  - who: Nora
+    text: "Oh nice, where did you go?"
+    label: small_talk
+  - who: me
+    text: "Up near the lake, the usual trail."
+  - who: Alex
+    text: "Sounds lovely. Anyway, we should probably start."
+    label: small_talk
+  - who: Nora
+    text: "Right. Did everyone see the email about the office move?"
+    label: small_talk
+  - who: Alex
+    text: "Yes, I saw it. Okay, one real item before we go."
+  - who: Alex
+    text: "Surya, is the evaluation set ready for the review on Friday?"
+    label: question_for_user
+  - who: me
+    text: "Yes, two thousand queries with graded relevance, it is ready."
+  - who: Nora
+    text: "Perfect. Thanks everyone, have a good one."
+    label: small_talk
